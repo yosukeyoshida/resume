@@ -50,6 +50,7 @@ Go, Python, EC2, RDS
 * push, sms, emailによる督促やIVRによる自動架電システムの構築
 * 不履行処理開発
 * 複数アカウントや不正の検出
+* Elasticsearchによる複垢検出
 * 機械学習モデルの開発 (教師あり/二値分類)
 * 機械学習パイプラインの構築
     * https://tech.kanmu.co.jp/entry/2021/06/11/120953
@@ -96,7 +97,7 @@ Ruby on Rails, Sinatra, Python, scikit-learn, Gensim, Elasticsearch, MySQL
 * 検索後の離脱率の改善 (25.28% -> 15.40%) 
 
 ##### 技術
-Ruby on Rails, Elasticsearch, SQS, MySQL
+Ruby on Rails, Elasticsearch, SQS, MySQL, Redis
 
 #### その他実績
 * 記事作成CMS開発 (Rails, AngularJS)
@@ -105,14 +106,10 @@ Ruby on Rails, Elasticsearch, SQS, MySQL
 
 ### 株式会社ベネフィット・ワン (2008.04 - 2014.06)
 ```
-福利厚生代行事業会社にて新規事業立ち上げやサイトリニューアル、業務システムの開発にPMとして従事
+福利厚生代行事業会社にて新規事業の立ち上げやシステムリニューアル, 業務システムの開発にPMとして従事
+
+* ソフトバンクとの協業によるB2C向け優待サービスの立ち上げ, API設計
+* NTTドコモのショップスタッフ向けインセンティブシステムの設計
+* グルメクーポンサイトリニューアル
+etc
 ```
-
-#### ソフトバンクとの協業によるB2C向け優待サービス開発
-* API, バッチ処理設計 (会員情報登録・更新 / 認証)
-
-#### インセンティブポイントASPサービスリニューアル
-* UIリニューアル / 物販システムとの統合
-
-#### グルメクーポンサイトリニューアル
-* Ruby on RailsをJavaで再構築 / DBの統合 (Oracle, SQLServer)
