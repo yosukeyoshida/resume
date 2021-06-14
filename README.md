@@ -4,9 +4,11 @@
 |key|value|
 |---|-----|
 |Name|吉田 陽祐|
-|Email|y.yoshida0327@gmail.com|
-|Kaggle|[https://www.kaggle.com/yosukey](https://www.kaggle.com/yosukey)|
-|Blog|[https://yosukeyoshida.netlify.app/](https://yosukeyoshida.netlify.app/)|
+|Birthday|1985/03/27|
+|GitHub|[yosukeyoshida](https://github.com/yosukeyoshida)|
+|Kaggle|[yosukey](https://www.kaggle.com/yosukey)|
+|Facebook|[Yosuke Yoshida](https://www.facebook.com/yosuke.yoshida.71/)|
+|LinkedIn|[Yosuke Yoshida](https://www.linkedin.com/in/yosuke-yoshida-5649a245/)|
 
 ## 学歴・職歴
 
@@ -24,8 +26,8 @@
 ## 職務経歴
 ### 株式会社カンム (2017.07 - 現在)
 ```
-Visaプリペイドカード「バンドルカード」の開発
-バックエンドや機械学習を活用した機能開発に従事
+Visaプリペイドカード 「バンドルカード」 のバックエンドや機械学習を活用した機能開発に従事
+後払いチャージ機能に関しては機械学習モデルの開発やデータパイプラインの整備, APIサーバの開発まですべての工程を担当
 ```
 
 #### プロセシングシステム内製化
@@ -41,25 +43,38 @@ Visaプリペイドカード「バンドルカード」の開発
 ##### 技術
 Go, Python, EC2, RDS
 
-#### 後払い機能開発 (ポチっとチャージ)
+#### 後払いチャージ (ポチっとチャージ)
 ##### 課題/背景
-* バンドルカード事業の収益の柱として立ち上げと数値目標の達成
+* バンドルカード事業の収益の柱として後払いチャージ機能の立ち上げとグロース、事業数値目標の達成
+* ポチっとチャージとはすぐに残高にチャージができて翌月末までにお支払いいただければよいというサービス
 
 ##### 実績
-* 後払いチャージや支払いまわりのAPI開発
-* push, sms, emailによる督促やIVRによる自動架電システムの構築
-* 不履行処理開発
-* 複数アカウントや不正の検出
-* Elasticsearchによる複垢検出
+* API開発 (バンドルカード)
+    * メール, SMS認証
+    * 後払いチャージ
+    * 支払い (コンビニ, ネット銀行, ペイジー etc)
+* バッチ処理
+    * 各種督促 (email, SMS, push notification)
+    * IVRによる自動架電 (Nexmo Voice API)
+    * 返済期限超過などに伴う各種処理
 * 機械学習モデルの開発 (教師あり/二値分類)
 * 機械学習パイプラインの構築
     * https://tech.kanmu.co.jp/entry/2021/06/11/120953
 * ルールベースと機械学習によるスコアリング
 * 返済率, 売上等の数値コントロールの為のルールベースや機械学習モデルの閾値のチューニング
+* 複数アカウントや不正の検出
+* Elasticsearchによる複垢検出
 
 ##### 技術
 Go, Python, RDS, ECS/Fargate, SageMaker, Cloud Storage, Cloud Dataflow, Step Functions, Elasticsearch, scikit-learn, LightGBM, PyTorch, Optuna, MLflow,
 BigQuery, Embulk, Digdag
+
+#### その他
+* Adjust
+* GMO対応
+* SES使ったメール / 認証
+
+
     
 ### iemo株式会社 (2014.08 - 2017.06)
 ```
@@ -99,10 +114,10 @@ Ruby on Rails, Sinatra, Python, scikit-learn, Gensim, Elasticsearch, MySQL
 ##### 技術
 Ruby on Rails, Elasticsearch, SQS, MySQL, Redis
 
-#### その他実績
-* 記事作成CMS開発 (Rails, AngularJS)
-* Ruby on Rails/Grapeを用いたREST API開発
-* バンディットアルゴリズムを用いた関連記事最適化
+#### その他
+* iOS/Androidアプリ向けAPI開発 (Ruby on Rails, Grape)
+* 記事作成CMS開発 (Ruby on Rails, AngularJS)
+* バンディットアルゴリズムを用いた関連記事レコメンデーション
 
 ### 株式会社ベネフィット・ワン (2008.04 - 2014.06)
 ```
@@ -113,3 +128,16 @@ Ruby on Rails, Elasticsearch, SQS, MySQL, Redis
 * グルメクーポンサイトリニューアル
 etc
 ```
+
+## 業務外活動
+* Kaggle
+    * Competitions Expert (Solo Silver 2, Solo Bronze 1)
+    * https://www.kaggle.com/yosukey
+
+## ブログ等
+* 個人ブログ
+    * https://yosukeyoshida.netlify.app/
+* 企業ブログ
+    * [カンムを支える技術 機械学習編](https://tech.kanmu.co.jp/entry/2021/06/11/120953)
+* インタビュー記事
+    * https://kanmu.co.jp/interviews/yy/
