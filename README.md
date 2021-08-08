@@ -7,7 +7,6 @@
 |Birthday|1985/03/27|
 |GitHub|[yosukeyoshida](https://github.com/yosukeyoshida)|
 |Kaggle|[yosukey](https://www.kaggle.com/yosukey)|
-|Facebook|[Yosuke Yoshida](https://www.facebook.com/yosuke.yoshida.71/)|
 |LinkedIn|[Yosuke Yoshida](https://www.linkedin.com/in/yosuke-yoshida-)|
 
 ## 学歴・職歴
@@ -40,7 +39,7 @@ Visaプリペイドカード 「バンドルカード」 のバックエンド�
     * バンドルカードのAPIサーバ(以下バンドルAPI)から以下のリクエストを受け処理を行う
         * カード発行, 上位のカードへのアップグレード
         * チャージ, 手数料徴収
-        * カードの一時停止/解除
+        * カードのステータス更新
     * 決済時にバンドルAPIに決済情報を通知 (webhook)
         * Visaの電文を処理するサーバとジョブキューを介して非同期に処理を行う
     * OpenAPIでスキーマを定義しサーバ/クライアントのコードを自動生成
@@ -70,18 +69,11 @@ Visaプリペイドカード 「バンドルカード」 のバックエンド�
 * 督促処理
     * Email, SMS, Push Notificationによる督促
     * IVRを用いた自動架電による督促
-        * 自動音声による入金のご案内とCSへの転送
 * 機械学習によるスコアリング
     * 機械学習モデルの開発
         * 教師あり/二値分類
-        * 不均衡データ
     * 機械学習パイプラインの構築
-        * Embulk/Digdagを用いてRDSからBigQueryへのデータの同期
-        * Cloud Dataflowを用いてBigQueryからデータを取得し前処理を行った後、CSVファイルでCloud Storageにアップロード
-        * モデルの学習からサービングまではStep Functionsを用いて自動化
-        * SageMakerを用いてモデルの学習とサービング
-        * 詳細はこちらのブログ参照
-            * https://tech.kanmu.co.jp/entry/2021/06/11/120953
+        * https://tech.kanmu.co.jp/entry/2021/06/11/120953
 * 複数アカウントや不正の検出
 
 ##### 技術
@@ -100,7 +92,7 @@ Visaプリペイドカード 「バンドルカード」 のバックエンド�
     
 ### iemo株式会社 (2014.08 - 2017.06)
 ```
-住まい・インテリアのメディアでバックエンドや検索, 機械学習を活用した開発に従事
+住まい/インテリアのメディアでバックエンドや検索, 機械学習を活用した開発に従事
 ```
 #### タグ・カテゴリ構造の再構築及び機械学習を用いた記事の自動分類
 ##### 課題/背景
@@ -110,18 +102,15 @@ Visaプリペイドカード 「バンドルカード」 のバックエンド�
 ##### 実績
 * 既存の記事をサンプリングし必要なカテゴリの洗い出しを行い、1階層8区分だったカテゴリを2階層30区分へ拡張 
 * 記事のカテゴリ分類を行う機械学習モデルの開発
-	* カテゴリ毎に特徴語を抽出(約40,000語)しLSIで300程度に次元削減した特徴量で多クラス分類/ロジスティック回帰 
-	* 教師データのアノテーションを能動学習することによって効率化
-* アノテーション用の管理画面を開発
-* 推論APIサーバの構築
-* 自動タグ付け機能開発
-* 誤った分類を執筆者が教師データに追加できるようにした
-* 新しいタグ・カテゴリ構造に合わせUIもリニューアル
+	* カテゴリ毎に特徴語を抽出しLSIで次元削減した特徴量で多クラス分類/ロジスティック回帰 
+	* アノテーション用の管理画面を用意し能動学習によって効率的に教師データのラベル付けを行う
+    * 推論APIサーバの構築
+* 自動タグ付け機能
 
 ##### 技術
 * Ruby on Rails
 * MySQL
-* Python (scikit-learn, Gensim)
+* Python (scikit-learn, Gensim etc)
 * Elasticsearch
 
 #### 検索基盤の整備
@@ -157,11 +146,5 @@ etc
 * Kaggle
     * Competitions Expert (Solo Silver 2, Solo Bronze 1)
     * https://www.kaggle.com/yosukey
-
-## ブログ等
 * 個人ブログ
     * https://yosukeyoshida.netlify.app/
-* 企業ブログ
-    * [カンムを支える技術 機械学習編](https://tech.kanmu.co.jp/entry/2021/06/11/120953)
-* インタビュー記事
-    * https://kanmu.co.jp/interviews/yy/
