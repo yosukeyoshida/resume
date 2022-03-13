@@ -4,7 +4,6 @@
 |key|value|
 |---|-----|
 |Name|吉田 陽祐|
-|Birthday|1985/03/27|
 |GitHub|[yosukeyoshida](https://github.com/yosukeyoshida)|
 |Kaggle|[yosukey](https://www.kaggle.com/yosukey)|
 |LinkedIn|[Yosuke Yoshida](https://www.linkedin.com/in/yosuke-yoshida-)|
