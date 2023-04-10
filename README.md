@@ -269,9 +269,3 @@ Visaプリペイドカード 「バンドルカード」 のバックエンド�
     * Ruby on Railsで稼働していた既存サービスをJavaで再構築
     * 分散していた社内管理システムの統合, UIリニューアル
 
-## 業務外活動
-* Kaggle
-    * Competitions Expert (Solo Silver 2, Solo Bronze 1)
-    * https://www.kaggle.com/yosukey
-* 個人ブログ
-    * https://yosukeyoshida.netlify.app/
