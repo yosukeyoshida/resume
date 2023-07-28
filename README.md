@@ -28,7 +28,7 @@
 ```
 ML, OCR開発
 ```
-[バクラクOCRにおける機械学習モデルの検証から本番投入までの取り組み](https://tech.layerx.co.jp/entry/2022/12/07/113211)
+https://tech.layerx.co.jp/archive/author/yossylx
 
 
 ### 株式会社カンム (2017.07 - 2022.03)
