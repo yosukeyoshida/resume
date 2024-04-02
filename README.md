@@ -5,8 +5,9 @@
 |---|-----|
 |Name|吉田 陽祐|
 |GitHub|[yosukeyoshida](https://github.com/yosukeyoshida)|
-|Kaggle|[yosukey](https://www.kaggle.com/yosukey)|
 |LinkedIn|[Yosuke Yoshida](https://www.linkedin.com/in/yosuke-yoshida-)|
+|YOUTRUST|[Yosuke Yoshida](https://www.linkedin.com/in/yosuke-yoshida-)|
+|Kaggle|[yosukey](https://www.kaggle.com/yosukey)|
 
 ## 学歴・職歴
 
